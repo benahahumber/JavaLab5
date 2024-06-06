@@ -2,14 +2,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        FactorialCalculator myFact = new FactorialCalculator();
+        FactorialCalculator factCal = new FactorialCalculator();
 
         try (Scanner sc = new Scanner(System.in)) {
             System.out.println("Enter a number: ");
             long numInput = sc.nextInt();
-            myFact.calFac(numInput, numInput);
+            factCal.calFac(numInput, numInput);
         } catch (Exception e) {
-            System.out.println("Please enter a valid number");
+            System.out.println("Please enter an integer.");
         }
     }
 }
